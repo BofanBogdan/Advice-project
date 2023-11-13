@@ -1,0 +1,105 @@
+@import url(https://db.onlinewebfonts.com/c/dd97c93d1184d223b93c9042b7e57980?family=Stratos+Web);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202632;
+  overflow: hidden;
+}
+.container .cardAdvice {
+  width: 540px;
+  height: 335px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #313a49;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  box-sizing: border-box;
+  padding: 20px 20px 0px 20px;
+  font-family: "Stratos Web";
+}
+.container .cardAdvice .nrAdvice {
+  color: #53ffab;
+  font-family: "Stratos Web";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+.container .cardAdvice .quote {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: StratosWeb;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container .cardAdvice .divider {
+  background: url("lineDivider.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15px;
+  width: 80%;
+}
+.container .cardAdvice .changeIcon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container .cardAdvice .change {
+  padding: 25px;
+  background: #53ffab;
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+/*partea mobile*/
+
+@media screen and (max-width: 550px) {
+  .container {
+    display: flex;
+  }
+  .container .nrAdvice {
+    font-size: 0.15rem;
+  }
+  .container .cardAdvice .divider {
+    background: url("lineDivider.svg") no-repeat;
+    width: 100%;
+    height: 17px;
+    flex-shrink: 0;
+  }
+  .container .cardAdvice {
+    width: 396px;
+    height: 361px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #313a49;
+  }
+  .container .cardAdvice .changeIcon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+}
